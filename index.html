@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>TAREAS</title>
+</head>
+
+
+
+<body class="bg-light">
+
+    
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">CONTROL DE TAREAS DIARIAS</span>
+          </a>
+    
+
+        </header>
+      </div>
+
+
+
+
+    <main class="container">
+    
+
+
+            <form class="g-3" id="form">
+             </div>
+             <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">Ingresa información</h4>
+                <form class="needs-validation" novalidate="">
+                    <div class="row g-3">
+
+                        <form id=" Tarea-form">
+                        <div class="col-12 py-3">
+                            <label for="Text" class="form-label">Pendiente<span class="text-muted"> (Obligatorio)</span></label>
+                            <input type="text" class="form-control" id="inputTitulo" placeholder="Inserta un Título para el pendiente " required="">
+                            <div class="invalid-feedback">
+                                Debes asignar un Título.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 py-3">
+                        <label for="Text" class="form-label">Descripción<span class="text-muted"> (Obligatorio)</span></label>
+                        <input type="text" class="form-control" id="inputDescp" placeholder="Describe la actividad a realizar" required="">
+                        <div class="invalid-feedback">
+                            Es necesario describir la tarea.
+                        </div>
+                    </div>
+                    <label for="Text" class="form-label">Hora<span class="text-muted"> (Opcional)</span></label>
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="InputHora">
+                        <option selected>selecciona</option>
+                        <option>Entre 1:00am y 6:00am</option>
+                        <option>6:00 am - 8:00 am</option>
+                        <option>8:00 am -10:00 am</option>
+                        <option>10:00 am -12:00 pm</option>
+                        <option>12:00 pm -02:00 pm</option>
+                        <option>02:00 pm -04:00 pm</option>
+                        <option>4:00 pm -6:00 pm</option>
+                        <option>6:00 pm -8:00 pm</option>
+                        <option>8:00 pm -10:00 pm</option>
+                        <option>10:00 pm -12:00 am</option>
+                      </select>
+
+
+    
+            <button class="btn btn-primary" type="submit" id="buton1">Guardar</button>
+            <section>
+
+                
+            </form>
+
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Tarea</th>
+                            <th scope="col">Comentarios</th>
+                            <th scope="col">Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+                        <th colspan="5">
+                            <h1>¡No existe ningún contacto!</h1>
+                        </th>
+                    </tbody>
+                </table>
+            </section>
+            </div>
+
+            </form>
+            </div>
+
+           </main>
+           <div class="modal fade" id="contactoModal" tabindex="-1" aria-labelledby="tareaModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactoModalLabel">Datos del contacto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="datosModal"> </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+          <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">Dino Sánchez</p>
+
+          </footer>
+          </div>
+
+
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+        <script src="./main.js"></script>
+
+</body>
+
+</html>
